@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="shopping-cart" type="text/html" href="shopping-cart.html">
+        <script defer src="cart.js" type="text/javascript"></script>
+        <link rel="home page" type="text/html" href="index.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;313;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lekton&display=swap" rel="stylesheet">
+        <title>
+        <title>shopping-cart</title> 
+    </head>
+    <body>
+            <div class="container">
+                <a href="index.html"><img src ="asset/logo.png" alt="logo" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="product-page.html">MENU</a></li>
+                        <li><a href="#location">LOCATION</a></li>
+                
+                        <li id="basket"><a href="shopping-cart.html"><img src="asset/basket.png" width="25" height="25" alt="basket"><span id="total-quantity"> 0 </span></a></li>
+                        <li id="user"><a href="#user"><img src="asset/user.png" width="30" height="25" alt="user"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="goBack">
+                <button class="back" type="button">
+                    <a href="product-page.html"><img class="icon" src="asset/rightArrow.png"> Back to All Flavor</a>
+                </button> 
+            </div>
+
+            <div id="RealBasket">
+
+                <div class="basketTitle">
+                    <h3>Your Basket</h3>
+                </div>
+                
+                <table class="theCart" border= 1 frame=void rules=rows>
+              
+                        <tr id="cartTitle">
+                            <td class="product-img"><p>Image</p></td>
+                            <td class="product-info"><p>Product</p></td>
+                            <td class="product-Qt"><p>Quantity</p></td>
+                            <td class="product-price"><p>Price</p></td>
+                            <td class="edit-item"><p>Edit</p></td>
+                            <td class="btn-remove-item"><p>Delete</p></td>
+                        </tr>
+                
+                        <tr class="cart-item" id="product-template">
+                    
+                            <td><img class="product-img" src=""  onerror="this.src='asset/Seasonal.png'"></td>
+    
+                            <td class="product-info">
+                                <div class="product-name"></div>
+                                <div class="product-glazing"></div>
+                            </td>
+    
+                            <td><img class="product-Qt" src="" alt="Quantity-button-4" width= "55px"
+                                height="55px" onerror="this.src='asset/2-ON.png'"></td>
+                            <td class="product-price">
+                                <div id="individualPrice"></div>
+                                <div id="multiplyBy">x4</div>
+    
+                            </td>
+                            <td class="edit-item"><a href="#edit"><img src="asset/edit.png" width="36" height="36" alt="edit"></a></td>
+                            <td> <button class="btn-remove-item"><img src="asset/cancel.png" width="36" height="36" alt="cancel"></button></td>
+                
+                        </tr>  
+                </table>
+
+
+          
+            </div>
+          
+          <div class="footer-total">
+            <div id="text-total">
+              Total: 
+              </div>
+            <div id="total">
+                $17.98
+            </div>
+          </div>
+
+            
+
+
+
+            <footer class="footer">
+                <div class="container2">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Our Story</h4>    
+                        </div>
+                        <div class="footer-col">
+                            <h4>FAQs</h4>   
+                        </div>
+                        <div class="footer-col">
+                            <h4>Contact Us</h4>   
+                        </div>
+                        <div class="footer-col">
+                            <div class="social-links">
+                                <a href="#"><img src="asset/facebook.png"  width="40" height="40" alt="facebook"></img></a>
+                                <a href="#"><img src="asset/instagram.png" width="40" height="40" alt="ins"></img></a>
+                                <a href="#"><img src="asset/twitter.png"  width="40" height="40" alt="twitter"></img></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>
+    

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="shopping-cart" type="text/html" href="shopping-cart.html">
+        <script defer src="main.js" type="text/javascript"></script>
+        <link rel="home page" type="text/html" href="index.html">
+        <link rel="product-page" type="text/html" href="product-page.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;313;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <title>product-detail-page-2</title> 
+    </head>
+    <body>
+        <div class="container">
+            <a href="index.html"><img src ="asset/logo.png" alt="logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="product-page.html">MENU</a></li>
+                    <li><a href="#location">LOCATION</a></li>
+        
+                    <li id="basket"><a href="shopping-cart.html"><img src="asset/basket.png" width="25" height="25" alt="basket"><span id="total-quantity"> 0 </span></a></li>
+                    <li id="user"><a href="#user"><img src="asset/user.png" width="30" height="25" alt="user"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="goBack">
+            <button class="back" type="button">
+                <a href="product-page.html"><img class="icon" src="asset/rightArrow.png"> Back to All Flavor</a>
+            </button> 
+        </div>
+
+        <div class="productImage">
+                <div class="mainImage">
+                    <img src="asset/Caramel Pecan.png" alt="CaramelPecan" width="510" height="510">
+                </div>
+                <div class="ingredient">
+                    <div id="cinnamon">
+                        <img src="asset/IngCinnamon.png" alt="cinnamon">
+                    </div>
+                    <div id="pecan">
+                        <img src="asset/pecan.jpeg" width="130" height="130" alt="pecan">
+                    </div>
+                    <div id="egg">
+                        <img src="asset/egg.png" alt="egg">
+                    </div>
+                </div>
+        </div>
+
+        <div class="productInfo">
+            <div class="productName">
+                <h1 id="Name">Caramel Pecan</h1>
+            </div>
+            <div class="productDescription">
+                <p>Our world-famous cinnamon roll is made with a combination of warm dough, 
+                legendary Makara cinnamon, and signature cream cheese for a freshly baked, irresistible sweet treat.</p>
+
+            </div>
+            <div class="quantity">
+                    <p class="title">Quantity</p>
+                    <form action="">
+                        <!--1-->
+                        <input type="radio" name="type" id="1" class="hidebx" value="1">
+                        <label for="1" class="b1-radio">
+                            <div class="display-box">
+                                <div id="Qt1" class="Qt1-off"></div>
+                            </div>
+                        </label>
+                        <!--2-->
+                        <input type="radio" name="type" id="2" class="hidebx" value="2">
+                        <label for="2" class="b1-radio">
+                            <div class="display-box">
+                                <div id="Qt2" class="Qt2-off"></div>
+                            </div>
+                        </label>
+                        <!--4-->
+                        <input type="radio" name="type" id="4" class="hidebx" value="4">
+                        <label for="4" class="b1-radio">
+                            <div class="display-box">
+                                <div id="Qt4" class="Qt4-off"></div>
+                            </div>
+                        </label>
+                        <!--6-->
+                        <input type="radio" name="type" id="6" class="hidebx" value="6">
+                        <label for="6" class="b1-radio">
+                            <div class="display-box">
+                                <div id="Qt6" class="Qt6-off"></div>
+                            </div>
+                        </label>
+                        <br>
+                        <input type="text" id="basketNum" size="50">
+                    </form>
+                    <br>
+            </div>
+            <div class="glazing">
+                    <p class="title">Glazing</p>
+                    <div class="choose">
+                        <select id="list" onchange="getSelectedGlaze()">
+                            <optgroup>
+                                <option value="none">None</option>
+                                <option value="sugarMilk">Sugar Milk</option>
+                                <option value="vanilaMilk">Vanila Milk</option>
+                                <option value="doubleChocolate">Double Chocolate</option>
+                            </optgroup>
+                        </select>
+                    </div>
+            </div>
+            <div class="price">
+                <p class="title">Price</p>
+                <div class="priceNum"><p id="priceTag">$3.45</p></div>
+            </div>
+        
+            <div class="Add">
+                    <button class="add-to-basket" onclick="checkQt()" id="addToB" type="button">
+                         Add to Basket
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+                <div class="container2">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Our Story</h4>
+                        </div>
+                        <div class="footer-col">
+                            <h4>FAQs</h4>  
+                        </div>
+                        <div class="footer-col">
+                            <h4>Contact Us</h4>   
+                        </div>
+                        <div class="footer-col">
+                            <div class="social-links">
+                                <a href="#"><img src="asset/facebook.png"  width="40" height="40" alt="facebook"></img></a>
+                                <a href="#"><img src="asset/instagram.png" width="40" height="40" alt="ins"></img></a>
+                                <a href="#"><img src="asset/twitter.png"  width="40" height="40" alt="twitter"></img></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+
+    </body>
+</html>

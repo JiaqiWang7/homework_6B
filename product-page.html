@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="shopping-cart" type="text/html" href="shopping-cart.html">
+        <link rel="product-detail-page-2" type="text/html" href="product-detail 2.html">
+        <script src="main.js" type="text/javascript"></script>
+        <link rel="home page" type="text/html" href="index.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;313;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+        <title>
+        <title>menu</title> 
+    </head>
+    <body>
+            <div class="container">
+                <a href="index.html"><img src ="asset/logo.png" alt="logo" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="product-page.html">MENU</a></li>
+                        <li><a href="#location">LOCATION</a></li>
+                
+                        <li id="basket"><a href="shopping-cart.html"><img src="asset/basket.png" width="25" height="25" alt="basket"></a></li>
+                        <li id="user"><a href="#user"><img src="asset/user.png" width="30" height="25" alt="user"></a></li>
+                    </ul>
+                </nav>
+            </div>
+<!-- The class 'Nav' content is partially based on a tutorial about how to make a side bar: https://www.youtube.com/watch?v=EQStBJU5AZM -->
+
+                <div class="Nav">
+                    <label for="btn" class="button">Menu
+                        <span class="fas fa-caret-down"></span>
+                        </label>
+                        <input type="checkbox" id="btn">
+                        <ul class="Menu">
+                            
+                            <li id="big"><a href="#">All Flavors</a></li>
+                        
+                           <li>
+                              <label for="btn-2" class="first">Featured
+                              <span class="fas fa-caret-down"></span>
+                              </label>
+                              <input type="checkbox" id="btn-2">
+                              <ul>
+                                 <li><a href="#">Original</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <label for="btn-3" class="second">Seasonal
+                              <span class="fas fa-caret-down"></span>
+                              </label>
+                              <input type="checkbox" id="btn-3">
+                              <ul>
+                                 <li><a href="product-detail.html">Pumpkin Spice</a></li>
+                                 <li><a href="#">Walnut</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                            <label for="btn-4" class="third">Gluten-Free
+                            <span class="fas fa-caret-down"></span>
+                            </label>
+                            <input type="checkbox" id="btn-4">
+                            <ul>
+                                <li><a href="#">Gluten-Free</a></li>
+                            </ul>
+                         </li>   
+                        </ul>
+                </div>
+                
+                <div class="product-container">
+                    <div class="grid-item1">
+                        <img src="asset/original.png" alt="origial">
+                        <p> Original</p>
+                        <button class="add-to-basket" type="button">
+                            <a href="#"><img id="smallBasket" src="asset/basket.png" width="20px" height="20px" alt="basket"> Add to Basket</a>
+                        </button> 
+                    </div>
+                    <div class="grid-item2">
+                        <img src="asset/Pumpkin Spice.png" width="197px" height="197px" 
+                        alt="Pumpkin-Cinnamon">
+                        <p> Pumpkin Spice</p>
+                        <button class="add-to-basket" type="button">
+                            <a href="product-detail.html"><img id="smallBasket" src="asset/basket.png" 
+                                width="20px" height="20px" alt="basket"> Add to Basket</a>
+                        </button>
+                    </div>
+                    <div class="grid-item3">
+                        <img src="asset/origial(gf).png" alt="origial gluten-free">
+                        <p> Original (Gluten-Free)</p>
+                        <button class="add-to-basket" type="button">
+                            <a href="#"><img id="smallBasket" src="asset/basket.png" 
+                                width="20px" height="20px" alt="basket"> Add to Basket</a>
+                        </button>
+                    </div>
+                    <div class="grid-item4">
+                        <img src="asset/blackberry.png" alt="blackberry">
+                        <p> Blackberry</p>
+                        <button class="add-to-basket" type="button">
+                            <a href="#"><img id="smallBasket" src="asset/basket.png" 
+                                width="20px" height="20px" alt="basket"> Add to Basket</a>
+                        </button>
+                    </div>
+                    <div class="grid-item5">
+                        <img src="asset/Caramel Pecan.png" alt="caramelPecan" width="197px" height="197px">
+                        <p> Caramel Pecan</p>
+                        <button class="add-to-basket" type="button">
+                            <a href="product-detail 2.html"><img id="smallBasket" src="asset/basket.png" 
+                                width="20px" height="20px" alt="basket"> Add to Basket</a>
+                        </button> 
+                    </div>
+                    <div class="grid-item6">
+                        <img src="asset/walnut.png" alt="walnut">
+                        <p> Walnut</p>
+                        <button class="add-to-basket" type="button">
+                            <a href="#"><img id="smallBasket" src="asset/basket.png" 
+                                width="20px" height="20px" alt="basket"> Add to Basket</a>
+                        </button>   
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container2">
+                        <div class="row">
+                            <div class="footer-col">
+                                <h4>Our Story</h4>    
+                            </div>
+                            <div class="footer-col">
+                                <h4>FAQs</h4>   
+                            </div>
+                            <div class="footer-col">
+                                <h4>Contact Us</h4>   
+                            </div>
+                            <div class="footer-col">
+                                <div class="social-links">
+                                    <a href="#"><img src="asset/facebook.png"  width="40" height="40" alt="facebook"></img></a>
+                                    <a href="#"><img src="asset/instagram.png" width="40" height="40" alt="ins"></img></a>
+                                    <a href="#"><img src="asset/twitter.png"  width="40" height="40" alt="twitter"></img></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>  
+        </body>
+    </html>
+        
