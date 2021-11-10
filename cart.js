@@ -8,15 +8,17 @@ const totalPriceElement = document.getElementById("total");
 
 
 //the functions for shopping cart page
-
+var x=0;
 function onload(){
-
+    
     var cartItemsString = localStorage.getItem("savedCart")
    // check if value exists in local storage
     if (cartItemsString !== null) {
     var Added = JSON.parse(cartItemsString) // converting stored string to object
-    for (var i=0;i<Added.length;i++){
+    if (x ==0){
+      for (var i=0;i<Added.length;i++){
         addProductHTML(Added[i].name, Added[i].price, Added[i].quantity, Added[i].glazing,i, Added[i]);
+      }
     }
     var removeCartItemButtons = document.getElementsByClassName('btn-remove-item')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -31,6 +33,7 @@ function onload(){
         }
         document.getElementById("total-quantity").textContent=Added.length;
     }
+    x=x+1;
 }
 function removeItem(name,cartItems) {
     
